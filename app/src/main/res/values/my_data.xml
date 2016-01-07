@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="talkname">
+
+        <item>พระบาทสมเด็จพระเจ้าอยู่หัว</item>
+        <item>talk2</item>
+        <item>talk3</item>
+        <item>talk4</item>
+        <item>talk5</item>
+        <item>talk6</item>
+        <item>talk7</item>
+        <item>talk8</item>
+        <item>talk9</item>
+        <item>talk10</item>
+        <item>talk11</item>
+        <item>talk12</item>
+        <item>talk13</item>
+        <item>talk14</item>
+        <item>talk15</item>
+
+    </string-array>
+
+
+    <string-array name="testmale">
+
+        <item>male1</item>
+        <item>male2</item>
+        <item>male3</item>
+        <item>male4</item>
+        <item>male5</item>
+
+    </string-array>
+
+    <string-array name="testfemale">
+
+        <item>female1</item>
+        <item>female2</item>
+        <item>female3</item>
+        <item>female4</item>
+        <item>female5</item>
+
+    </string-array>
+
+
+</resources>
