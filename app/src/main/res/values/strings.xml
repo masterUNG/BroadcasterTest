@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Broadcaster Test</string>
+
+    <string name="talkname">ขานพระนาม</string>
+    <string name="newtest_male">แบบทดสอบ ประกาศข่าว ผู้ชาย</string>
+    <string name="newtest_female">แบบทดสอบ ประกาศข่าว ผู้หญิง</string>
+
 </resources>
