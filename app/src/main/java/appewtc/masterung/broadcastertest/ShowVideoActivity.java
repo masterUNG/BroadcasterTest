@@ -30,7 +30,12 @@ public class ShowVideoActivity extends AppCompatActivity {
     private void showVideo() {
 
         showVideoView = (VideoView) findViewById(R.id.videoView);
-        String strSourceVideo = "android.resource://" + getPackageName() + "/" + R.raw.talkname1;
+        //String strSourceVideo = "android.resource://" + getPackageName() + "/" + R.raw.talkname1;
+
+        int intSource = getIntent().getIntExtra("Video", 0);
+
+        String strSourceVideo = "android.resource://" + getPackageName() + "/" + intSource;
+
 
         MediaController objMediaController = new MediaController(this);
         objMediaController.setAnchorView(showVideoView);

@@ -13,6 +13,7 @@ public class DetailListView extends AppCompatActivity {
     //Explicit
     private String[] titleStrings;
     private int iconAnInt;
+    private int[] videoInts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +45,7 @@ public class DetailListView extends AppCompatActivity {
                 //Intent to ShowVideoActivity
                 Intent objIntent = new Intent(DetailListView.this, ShowVideoActivity.class);
                 objIntent.putExtra("Title", titleStrings[i]);
-                objIntent.putExtra("Video", R.raw.talkname1);
+                objIntent.putExtra("Video", videoInts[i]);
                 startActivity(objIntent);
 
 
@@ -57,6 +58,7 @@ public class DetailListView extends AppCompatActivity {
 
         titleStrings = getIntent().getStringArrayExtra("Title");
         iconAnInt = getIntent().getIntExtra("Icon", R.drawable.nameread);
+        videoInts = getIntent().getIntArrayExtra("Video");
 
         for (int i = 0; i < titleStrings.length; i++) {
             Log.d("Test", "titleString[" + Integer.toString(i) + "] = " + titleStrings[i]);
