@@ -47,5 +47,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/videoView"
         android:layout_below="@+id/txtShowTitleVideo"
-        android:layout_above="@+id/buttonLinear" />
+        android:layout_above="@+id/buttonLinear"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
