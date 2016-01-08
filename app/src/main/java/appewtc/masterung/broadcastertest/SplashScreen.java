@@ -21,7 +21,7 @@ public class SplashScreen extends AppCompatActivity {
                 finish();
             }
         }, 6000);
-        MediaPlayer introPlayer = MediaPlayer.create(getBaseContext(), R.raw.intro_start_horse);
+        MediaPlayer introPlayer = MediaPlayer.create(getBaseContext(), R.raw.soundtitle);
         introPlayer.start();
     }   // Main Method
 

@@ -15,5 +15,5 @@
         android:layout_height="@dimen/logo"
         android:id="@+id/imageView"
         android:layout_centerInParent="true"
-        android:src="@drawable/master_android" />
+        android:src="@drawable/logo" />
 </RelativeLayout>

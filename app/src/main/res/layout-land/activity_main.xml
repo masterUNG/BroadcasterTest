@@ -26,21 +26,21 @@
                 android:layout_height="@dimen/icon"
                 android:id="@+id/imageView2"
                 android:layout_weight="1"
-                android:src="@drawable/blue" />
+                android:src="@drawable/nameread" />
 
             <ImageView
                 android:layout_width="@dimen/icon"
                 android:layout_height="@dimen/icon"
                 android:id="@+id/imageView3"
                 android:layout_weight="1"
-                android:src="@drawable/green" />
+                android:src="@drawable/testboy" />
 
             <ImageView
                 android:layout_width="@dimen/icon"
                 android:layout_height="@dimen/icon"
                 android:id="@+id/imageView4"
                 android:layout_weight="1"
-                android:src="@drawable/red" />
+                android:src="@drawable/gtest" />
         </LinearLayout>
 
         <LinearLayout

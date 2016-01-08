@@ -3,44 +3,43 @@
 
     <string-array name="talkname">
 
-        <item>พระบาทสมเด็จพระเจ้าอยู่หัว</item>
-        <item>talk2</item>
-        <item>talk3</item>
-        <item>talk4</item>
-        <item>talk5</item>
-        <item>talk6</item>
-        <item>talk7</item>
-        <item>talk8</item>
-        <item>talk9</item>
-        <item>talk10</item>
-        <item>talk11</item>
-        <item>talk12</item>
-        <item>talk13</item>
-        <item>talk14</item>
-        <item>talk15</item>
 
+        <item>พระบาทสมเด็จพระเจ้าอยู่หัว</item>
+        <item>สมเด็จพระนางเจ้าฯพระบรมราชินีนาถ</item>
+        <item>สมเด็จพระบรมโอรสาธิราชฯสยามมกุฎราชกุมาร</item>
+        <item>สมเด็จพระเทพรัตนราชสุดาฯสยามบรมราชกุมารี</item>
+        <item>สมเด็จพระเจ้าลูกเธอ เจ้าฟ้าจุฬาภรณ์วลัยลักษณ์อัครราชกุมารี</item>
+        <item>สมเด็จพระเจ้าภคินีเธอ เจ้าฟ้าเพชรรัตนราชสุดา สิริโสภาพัณณวดี</item>
+        <item>สมเด็จพระเจ้าพี่นางเธอ เจ้าฟ้ากัลยาณิวัฒนา กรมหลวงนราธิวาสราชนครินทร์</item>
+        <item>สมเด็จพระศรีนคริทราบรมราชชนี</item>
+        <item>พระเจ้าวรวงศ์เธอ พระองค์เจ้าโสมสวลี พระวรราชาทินัดดามาตุ</item>
+        <item>พระเจ้าหลานเธอ พระองค์เจ้าสิริภาจุฑาภรณ์</item>
+        <item>พระเจ้าหลานเธอ พระองค์เจ้าอทิตยาทร กิติคุณ</item>
+        <item>พระเจ้าหลานเธอ พระองค์เจ้าพัชรกิติยาภา</item>
+        <item>พระเจ้าหลานเธอ พระองค์เจ้าสิริวัณณวรีนารีรัตน์</item>
+        <item>พระเจ้าหลานเธอ พระองค์เจ้าทีปังกรรัศมีโชติ</item>
+        <item>ทูลกระหม่อมหญิงอุบลรัตนราชกัญญา สิริวัฒนาพรรณวดี</item>
     </string-array>
 
 
     <string-array name="testmale">
 
-        <item>male1</item>
-        <item>male2</item>
-        <item>male3</item>
-        <item>male4</item>
-        <item>male5</item>
 
+        <item>แบบทดสอบสำหรับผู้ชายชุดที่ 1</item>
+        <item>แบบทดสอบสำหรับผู้ชายชุดที่ 2</item>
+        <item>แบบทดสอบสำหรับผู้ชายชุดที่ 3</item>
+        <item>แบบทดสอบสำหรับผู้ชายชุดที่ 4</item>
+        <item>แบบทดสอบสำหรับผู้ชายชุดที่ 5</item>
     </string-array>
 
     <string-array name="testfemale">
 
-        <item>female1</item>
-        <item>female2</item>
-        <item>female3</item>
-        <item>female4</item>
-        <item>female5</item>
 
+        <item>แบบทดสอบสำหรับผู้หญิงชุดที่ 1</item>
+        <item>แบบทดสอบสำหรับผู้หญิงชุดที่ 2</item>
+        <item>แบบทดสอบสำหรับผู้หญิงชุดที่ 3</item>
+        <item>แบบทดสอบสำหรับผู้หญิงชุดที่ 4</item>
+        <item>แบบทดสอบสำหรับผู้หญิงชุดที่ 5</item>
     </string-array>
-
 
 </resources>
