@@ -41,16 +41,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
 
         String[] resultStrings = null;
+        int intIcon = R.drawable.nameread;
 
         switch (view.getId()) {
             case R.id.imageView2:
                 resultStrings = getResources().getStringArray(R.array.talkname);
+                intIcon = R.drawable.nameread;
                 break;
             case R.id.imageView3:
                 resultStrings = getResources().getStringArray(R.array.testmale);
+                intIcon = R.drawable.testboy;
                 break;
             case R.id.imageView4:
                 resultStrings = getResources().getStringArray(R.array.testfemale);
+                intIcon = R.drawable.gtest;
                 break;
             default:
                 break;
@@ -60,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Intent to Detail ListView
         Intent objIntent = new Intent(MainActivity.this, DetailListView.class);
         objIntent.putExtra("Title", resultStrings);
+        objIntent.putExtra("Icon", intIcon);
         startActivity(objIntent);
 
     }   // onClick
