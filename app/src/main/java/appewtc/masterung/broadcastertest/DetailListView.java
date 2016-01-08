@@ -3,6 +3,7 @@ package appewtc.masterung.broadcastertest;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.ListView;
 
 public class DetailListView extends AppCompatActivity {
@@ -23,6 +24,10 @@ public class DetailListView extends AppCompatActivity {
         createListView();
 
     }   // Main Method
+
+    public void clickBackListView(View view) {
+        finish();
+    }
 
     private void createListView() {
 
