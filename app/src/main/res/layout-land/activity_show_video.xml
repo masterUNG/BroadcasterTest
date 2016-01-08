@@ -28,6 +28,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="clickBackShowVideo"
             android:text="Back"
             android:id="@+id/button2"
             android:layout_weight="1" />
@@ -35,6 +36,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="clickTest"
             android:text="Test"
             android:id="@+id/button3"
             android:layout_weight="1" />
