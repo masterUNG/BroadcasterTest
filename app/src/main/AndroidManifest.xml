@@ -23,7 +23,7 @@
         <activity
             android:name=".DetailListView"
             android:screenOrientation="landscape" />
-        <activity android:name=".ShowVideoActivity"></activity>
+        <activity android:name=".ShowVideoActivity" android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>

@@ -1,9 +1,11 @@
 package appewtc.masterung.broadcastertest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class DetailListView extends AppCompatActivity {
@@ -34,6 +36,19 @@ public class DetailListView extends AppCompatActivity {
         MyAdapter objMyAdapter = new MyAdapter(DetailListView.this, titleStrings, iconAnInt);
         ListView myListView = (ListView) findViewById(R.id.listView);
         myListView.setAdapter(objMyAdapter);
+
+        myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                //Intent to ShowVideoActivity
+                Intent objIntent = new Intent(DetailListView.this, ShowVideoActivity.class);
+                objIntent.putExtra("Title", titleStrings[i]);
+                startActivity(objIntent);
+
+
+            }   // event
+        });
 
     }   // createListView
 
