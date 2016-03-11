@@ -1,5 +1,6 @@
 package appewtc.masterung.broadcastertest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -27,8 +28,21 @@ public class ShowScoreActivity extends AppCompatActivity {
         //Show Date
         showDate();
 
+        //Update Data to SQLite
+        updateDataToSQLite();
+
 
     }   // Main Method
+
+    private void updateDataToSQLite() {
+
+        MyManage myManage = new MyManage(this);
+        myManage.addTest(currentDateString,
+                Integer.toString(scoreAnInt),
+                Integer.toString(timesAnInt));
+
+
+    }   // updateDataToSQlite
 
     private void showDate() {
 
@@ -52,7 +66,7 @@ public class ShowScoreActivity extends AppCompatActivity {
     }   // showScore
 
     public void clickReadScore(View view) {
-
+        startActivity(new Intent(ShowScoreActivity.this, ListScoreActivity.class));
     }   // clickReadScore
 
 }   // Main Class
