@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.MediaController;
 import android.widget.TextView;
@@ -15,7 +14,7 @@ public class ShowVideoActivity extends AppCompatActivity {
     //Explicit ประกาศตัวแปร
     private TextView titleTextView;
     private VideoView showVideoView;
-    private String strTitle;
+    private String strTitle, detailString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,10 +64,11 @@ public class ShowVideoActivity extends AppCompatActivity {
 
     public void clickTest(View view) {
 
-        Log.d("10March", "Click Test");
+        detailString = getIntent().getStringExtra("Detail");
 
         Intent intent = new Intent(ShowVideoActivity.this, TestActivity.class);
         intent.putExtra("Title", strTitle);
+        intent.putExtra("Detail", detailString);
         startActivity(intent);
     }
 

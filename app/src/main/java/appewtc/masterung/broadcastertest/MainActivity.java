@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             R.raw.talkname4, R.raw.talkname5, R.raw.talkname6, R.raw.talkname7,
             R.raw.talkname8, R.raw.talkname9, R.raw.talkname10, R.raw.talkname11,
             R.raw.talkname12, R.raw.talkname13, R.raw.talkname14, R.raw.talkname15};
+    private String[] detailStrings;
 
 
     @Override
@@ -52,16 +53,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
             case R.id.imageView2:
                 resultStrings = getResources().getStringArray(R.array.talkname);
+                detailStrings = getResources().getStringArray(R.array.talkname_detail);
                 intIcon = R.drawable.nameread;
                 sourceVideo = myVideo;
                 break;
             case R.id.imageView3:
                 resultStrings = getResources().getStringArray(R.array.testmale);
+                detailStrings = getResources().getStringArray(R.array.testmale_detail);
                 intIcon = R.drawable.testboy;
                 sourceVideo = myVideo;
                 break;
             case R.id.imageView4:
                 resultStrings = getResources().getStringArray(R.array.testfemale);
+                detailStrings = getResources().getStringArray(R.array.testfemale_detail);
                 intIcon = R.drawable.gtest;
                 sourceVideo = myVideo;
                 break;
@@ -75,6 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Intent to Detail ListView
         Intent objIntent = new Intent(MainActivity.this, DetailListView.class);
         objIntent.putExtra("Title", resultStrings);
+        objIntent.putExtra("Detail", detailStrings);
         objIntent.putExtra("Icon", intIcon);
         objIntent.putExtra("Video", sourceVideo);
         startActivity(objIntent);

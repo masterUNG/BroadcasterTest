@@ -10,6 +10,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class TestActivity extends Activity  {
+
+    //Explicit
+    private TextView showDetailTextView;
+    private String detailString;
+
+
+
     /* constants */
     private static final int POLL_INTERVAL = 300;
 
@@ -70,6 +77,10 @@ public class TestActivity extends Activity  {
         // Defined SoundLevelView in main.xml file
         setContentView(R.layout.activity_test);
         mStatusView = (TextView) findViewById(R.id.status);
+        showDetailTextView = (TextView) findViewById(R.id.textView5);
+
+        //Show Detail View
+        showDetailView();
 
         // Used to record voice
         mSensor = new SoundMeter();
@@ -77,6 +88,11 @@ public class TestActivity extends Activity  {
 
         PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
         mWakeLock = pm.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, "NoiseAlert");
+    }
+
+    private void showDetailView() {
+        detailString = getIntent().getStringExtra("Detail");
+        showDetailTextView.setText(detailString);
     }
 
 

@@ -5,4 +5,6 @@
     <string name="newtest_male">แบบทดสอบ ประกาศข่าว ผู้ชาย</string>
     <string name="newtest_female">แบบทดสอบ ประกาศข่าว ผู้หญิง</string>
 
+    <string name="title_test">โปรดอ่านข้อความ ต่อไปนี้</string>
+
 </resources>

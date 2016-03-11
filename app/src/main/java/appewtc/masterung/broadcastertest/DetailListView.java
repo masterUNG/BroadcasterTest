@@ -11,7 +11,7 @@ import android.widget.ListView;
 public class DetailListView extends AppCompatActivity {
 
     //Explicit
-    private String[] titleStrings;
+    private String[] titleStrings, detailStrings;
     private int iconAnInt;
     private int[] videoInts;
 
@@ -45,6 +45,7 @@ public class DetailListView extends AppCompatActivity {
                 //Intent to ShowVideoActivity
                 Intent objIntent = new Intent(DetailListView.this, ShowVideoActivity.class);
                 objIntent.putExtra("Title", titleStrings[i]);
+                objIntent.putExtra("Detail", detailStrings[i]);
                 objIntent.putExtra("Video", videoInts[i]);
                 startActivity(objIntent);
 
@@ -57,6 +58,7 @@ public class DetailListView extends AppCompatActivity {
     private void receiveValue() {
 
         titleStrings = getIntent().getStringArrayExtra("Title");
+        detailStrings = getIntent().getStringArrayExtra("Detail");
         iconAnInt = getIntent().getIntExtra("Icon", R.drawable.nameread);
         videoInts = getIntent().getIntArrayExtra("Video");
 
