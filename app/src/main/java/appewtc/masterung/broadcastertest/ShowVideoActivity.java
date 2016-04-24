@@ -66,7 +66,7 @@ public class ShowVideoActivity extends AppCompatActivity {
 
         detailString = getIntent().getStringExtra("Detail");
 
-        Intent intent = new Intent(ShowVideoActivity.this, TestActivity.class);
+        Intent intent = new Intent(ShowVideoActivity.this, NameActivity.class);
         intent.putExtra("Title", strTitle);
         intent.putExtra("Detail", detailString);
         startActivity(intent);

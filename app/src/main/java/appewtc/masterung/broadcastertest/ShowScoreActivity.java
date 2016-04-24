@@ -36,10 +36,12 @@ public class ShowScoreActivity extends AppCompatActivity {
 
     private void updateDataToSQLite() {
 
+        String strName = getIntent().getStringExtra("Name");
+
         MyManage myManage = new MyManage(this);
         myManage.addTest(currentDateString,
                 Integer.toString(scoreAnInt),
-                Integer.toString(timesAnInt));
+                Integer.toString(timesAnInt), strName);
 
 
     }   // updateDataToSQlite

@@ -104,10 +104,14 @@ public class TestActivity extends Activity  {
     }   // Main Method
 
     public void clickShowScore(View view) {
+
+        String strName = getIntent().getStringExtra("Name");
+
         Intent intent = new Intent(TestActivity.this, ShowScoreActivity.class);
 
         intent.putExtra("Score", scoreAnInt);
         intent.putExtra("Times", timeAnInt);
+        intent.putExtra("Name", strName);
 
         startActivity(intent);
         finish();

@@ -9,5 +9,6 @@
     <string name="start_test">เริ่มอ่านข้อความ ได้เลยคะ</string>
     <string name="bingo">คะแนนของคุณ</string>
     <string name="read_score">ดูคะแนนที่ผ่านมา</string>
+    <string name="head_name">กรุณาใช่ชื่อ ผู้ทดสอบ</string>
 
 </resources>

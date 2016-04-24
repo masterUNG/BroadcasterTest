@@ -15,6 +15,7 @@ public class MyManage {
 
     public static final String test_table = "testTABLE";
     public static final String column_id = "_id";
+    public static final String column_name = "Name";
     public static final String column_Date = "Date";
     public static final String column_Score = "Score";
     public static final String column_Times = "Times";
@@ -29,9 +30,11 @@ public class MyManage {
 
     public long addTest(String strDate,
                         String strScore,
-                        String strTimes) {
+                        String strTimes,
+                        String strName) {
 
         ContentValues contentValues = new ContentValues();
+        contentValues.put(column_name, strName);
         contentValues.put(column_Date, strDate);
         contentValues.put(column_Score, strScore);
         contentValues.put(column_Times, strTimes);

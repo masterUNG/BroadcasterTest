@@ -14,6 +14,7 @@ public class MyOpenHelper extends SQLiteOpenHelper{
     private static final int database_version = 1;
     private static final String create_testTABLE = "create table testTABLE (" +
             "_id integer primary key, " +
+            "Name text, " +
             "Date text, " +
             "Score text, " +
             "Times text);";
