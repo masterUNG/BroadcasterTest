@@ -32,12 +32,14 @@ public class ListScoreActivity extends AppCompatActivity {
         String[] scoreStrings = new String[cursor.getCount()];
         String[] timesStrings = new String[cursor.getCount()];
         String[] showScoreStrings = new String[cursor.getCount()];
+        String[] nameStrings = new String[cursor.getCount()];
 
         for (int i=0;i<cursor.getCount();i++) {
 
-            dateStrings[i] = cursor.getString(1);
-            scoreStrings[i] = cursor.getString(2);
-            timesStrings[i] = cursor.getString(3);
+            dateStrings[i] = cursor.getString(cursor.getColumnIndex(MyManage.column_Date));
+            scoreStrings[i] = cursor.getString(cursor.getColumnIndex(MyManage.column_Score));
+            timesStrings[i] = cursor.getString(cursor.getColumnIndex(MyManage.column_Times));
+            nameStrings[i] = cursor.getString(cursor.getColumnIndex(MyManage.column_name));
             showScoreStrings[i] = scoreStrings[i] + "/" + timesStrings[i];
 
             cursor.moveToNext();
@@ -47,7 +49,7 @@ public class ListScoreActivity extends AppCompatActivity {
 
         scoreListView = (ListView) findViewById(R.id.listView2);
         ScoreAdapter scoreAdapter = new ScoreAdapter(ListScoreActivity.this,
-                dateStrings, showScoreStrings);
+                nameStrings, dateStrings, showScoreStrings);
         scoreListView.setAdapter(scoreAdapter);
 
     }   // createListView

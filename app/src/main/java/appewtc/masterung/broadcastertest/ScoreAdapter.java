@@ -14,9 +14,13 @@ public class ScoreAdapter extends BaseAdapter{
 
     //Explicit
     private Context context;
-    private String[] dateStrings, scoreStrings;
+    private String[] nameStrings, dateStrings, scoreStrings;
 
-    public ScoreAdapter(Context context, String[] dateStrings, String[] scoreStrings) {
+    public ScoreAdapter(Context context,
+                        String[] nameStrings,
+                        String[] dateStrings,
+                        String[] scoreStrings) {
+        this.nameStrings = nameStrings;
         this.context = context;
         this.dateStrings = dateStrings;
         this.scoreStrings = scoreStrings;
@@ -48,6 +52,9 @@ public class ScoreAdapter extends BaseAdapter{
 
         TextView scoreTextView = (TextView) view1.findViewById(R.id.textView10);
         scoreTextView.setText(scoreStrings[i]);
+
+        TextView nameTextView = (TextView) view1.findViewById(R.id.textView12);
+        nameTextView.setText(nameStrings[i]);
 
         return view1;
     }
